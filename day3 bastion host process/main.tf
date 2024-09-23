@@ -153,9 +153,9 @@ tags = {
 }
 #private instance
 resource "aws_instance" "private" {
-ami = "ami-0a4408457f9a03be3"
+ami = "ami-08718895af4dfa033"
 instance_type = "t2.micro"
-key_name = "my-kp"
+key_name = "key"
 security_groups = [aws_security_group.ammu.id]
 associate_public_ip_address = false
 subnet_id = aws_subnet.babu.id
