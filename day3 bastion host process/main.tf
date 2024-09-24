@@ -142,7 +142,7 @@ resource "aws_eip" "babu" {
 resource "aws_instance" "public" {
 ami = "ami-0a4408457f9a03be3"
 instance_type = "t2.micro"
-key_name = "my-kp"
+key_name = "key"
 security_groups = [aws_security_group.ammu.id]
 associate_public_ip_address = true
 subnet_id = aws_subnet.ammu.id
